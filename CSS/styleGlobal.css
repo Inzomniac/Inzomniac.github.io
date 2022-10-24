@@ -236,7 +236,7 @@ https://www.section.io/engineering-education/building-an-animated-vertical-timel
 }
 
 .timelineSection ul li:nth-child(even) div{
-	left: -680px;
+	left: -580px;
 }
 
 .timelineSection ul li:nth-child(even) div::before{
