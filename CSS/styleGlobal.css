@@ -1,0 +1,351 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Space Mono';
+}
+
+:root{
+	--cWhite: #FFFFFF;
+	--cGrey: #E5E5E5;
+	--cYellow: #FCA311;
+	--cBlue: #14213D;
+}
+
+body{
+	border: 3px solid var(--cBlue);
+}
+.headercontainer h1{
+	margin: auto;
+	display: block;
+	text-align: center;
+	font-size: 28px;
+}
+.headercontainer h2{
+	margin: auto;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+.headercontainer img{
+	display: block;
+	max-width: 50%;
+	height: auto;
+	margin: auto;
+}
+.headercontainer{
+	height: 250px;
+	background-color: var(--cGrey);
+	padding: 10px;
+}
+
+/*Navigation Div*/
+.topnav {
+  background-color: var(--cBlue);
+  overflow: hidden;
+}
+
+/* Links inside Navigation Div */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--cGrey);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: var(--cYellow);
+  color: var(--cBlack);
+}
+
+.topnav a.active {
+  background-color: var(--cYellow);
+  color: var(--cBlack);
+  font-weight: bold;
+}
+
+footer{
+	display: table;
+	width: 100%;
+	background-color: var(--cGrey);
+	text-align: center;
+	border: 1px solid var(--cBlue);
+}
+
+footer h3{
+	text-decoration: underline;
+}
+
+footer .col{
+	display: table-cell;
+	width: 45%;
+}
+
+footer #quicklinks{
+	float: left;
+	text-align: center;
+}
+
+
+footer #socials{
+	float: right;
+	text-align: center;
+}
+
+footer ul li{
+	list-style: none;
+	padding: 15px;
+}
+
+footer #disclaimer{
+	display: table-row;
+	text-align: center;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.row h1{
+	font-size: 2.5rem;
+}
+.row p{
+	font-size: 1.5rem;
+}
+.col{
+	text-align: center;
+	flex-basis: 50%;
+}
+.col img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	height: 250px;
+	width: 230px;
+}
+/*Credit Section.io for timeline tutorial 
+https://www.section.io/engineering-education/building-an-animated-vertical-timeline-chart-with-html-css-and-javascript/*/
+.textSection{
+	background-color: var(--cBlue);
+	color: var(--cGrey);
+	padding: 2rem 0;
+}
+
+.textSection h1{
+	font-size: 2.5rem;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.textSection p, .timeline p{
+	font-size: 1.5rem;
+	padding-top: 2rem;
+	line-height: 1.6;
+}
+
+.timelineSection{
+	width: 100%;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.timelineSection ul{
+	background: --var(cGrey);
+	padding: 5rem 0;
+}
+
+.timelineSection ul li{
+	list-style: none;
+	position: relative;
+	width: 5px;
+	margin: 0 auto;
+	padding-top: 5rem;
+	background: var(--cYellow);
+}
+
+.timelineSection ul li::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background: inherit;
+}
+
+.timelineSection ul li div{
+	width: 40rem;
+	font-size: 1.2rem;
+	position: relative;
+	bottom: 0;
+	padding: 1.5rem;
+	/*Add effect*/
+	background: rgba(255,255,255,.2);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.timelineSection ul li div::before{
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+.timelineSection ul li:nth-child(odd) div{
+	left: 45px;
+}
+
+.timelineSection ul li:nth-child(odd) div::before{
+	left: -15px;
+	border-width: 8px 16px 8px 0;
+	border-color: transparent var(--cYellow) transparent transparent;
+}
+
+.timelineSection ul li:nth-child(even) div{
+	left: -680px;
+}
+
+.timelineSection ul li:nth-child(even) div::before{
+	right: -15px;
+	border-width: 8px 0 8px 16px;
+	border-color: transparent transparent transparent var(--cYellow);
+}
+
+time {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+/*animation code*/
+.timelineSection ul li::after{
+	transition: all 0.5s ease-in-out;
+}
+
+.timelineSection ul li.slide-in::after{
+	background: var(--cWhite);
+	border: 3px solid var(--cYellow);
+}
+
+.timelineSection ul li div{
+	visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.timelineSection ul li:nth-child(odd) div{
+	transform: translateX(20rem);
+}
+
+.timelineSection ul li:nth-child(even) div {
+    transform: translateX(-20rem);
+}
+
+.timelineSection ul li.slide-in div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px){
+	.timelineSection ul li div{
+		width: 25rem;
+	}
+	.timelineSection ul li:nth-child(even) div{
+		left: -445px;
+	}
+}
+
+/* When the screen is less than 768 (Tablet) pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+  }
+  .topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+		float: right;
+		display: block;
+  }
+	.headercontainer h1{
+		margin: auto;
+		display: block;
+		text-align: center;
+		font-size: 28px;
+	}
+	.headercontainer h2{
+		margin: auto;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+	}
+	.headercontainer img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	
+	.timelineSection ul li{
+      margin-left: 2rem;
+    }
+  
+    .timelineSection ul li div{
+      width: calc(100vw - 91px);
+    }
+  
+    .timelineSection ul li:nth-child(even) div{
+      left: 45px;
+    }
+  
+    .timelineSection ul li:nth-child(even) div::before{
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent var(--cYellow) transparent transparent;
+    }
+}

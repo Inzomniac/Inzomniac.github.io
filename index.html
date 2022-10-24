@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>Homepage</title>
+		<link rel="stylesheet" type="text/css" href="CSS/styleGlobal.css">
+		<link rel="stylesheet" type="text/css" href="CSS/styleHome.css">
+		<link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="JS/scriptGlobal.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="headercontainer">
+				<img src="MEDIA/siteicon.png" alt="Site Icon">
+				<h1>Hardware History</h1>
+				<h2>By: Jarrod McLaren</h2>
+			</div>
+		</header>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="active">Home</a>
+				<a href="cpuTimeline.html">CPU History</a>
+				<a href="gpuTimeline.html">GPU History</a>
+				<a href="ramTimeline.html">RAM History</a>
+				<a href="storageTimeline.html">Storage History</a>
+				<a href="about.html">About this site</a>
+				<a href="javascript:void(0);" class="icon" onclick="dropMenu()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</nav>
+		<content>
+		<!--Content Section-->
+			<div class="slideshow">
+				<!--Slide 1-->
+				<div class="slides fade">
+					<div class="counter">1 / 4</div>
+					<img src="MEDIA/cpuSlide.jpg" style="width:auto, height:auto">
+					<div class="text">Click the image above to read more about CPU History.</div>
+				</div>
+				<!--Slide 2-->
+				<div class="slides fade">
+					<div class="counter">2 / 4</div>
+					<img src="MEDIA/gpuSlide.jpg" style="width:auto">
+					<div class="text">Click the image above to read more about GPU History.</div>
+				</div>
+				<!--Slide 3-->
+				<div class="slides fade">
+					<div class="counter">3 / 4</div>
+					<img src="MEDIA/ramSlide.jpg" style="width:auto">
+					<div class="text">Click the image above to read more about RAM History.</div>
+				</div>
+				<!--Slide 4-->
+				<div class="slides fade">
+					<div class="counter">4 / 4</div>
+					<img src="MEDIA/storageSide.jpg" style="width:auto">
+					<div class="text">Click the image above to read more about Storage History.</div>
+				</div>
+				<!--Next and Previous-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		<!--End Content Section-->
+		</content>
+		<footer>
+			<div id="quicklinks" class="col">
+				<h3>Quick links:</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cpuTimeline.html">CPU History</a></li>
+					<li><a href="gpuTimeline.html">GPU History</a></li>
+					<li><a href="ramTimeline.html">RAM History</a></li>
+					<li><a href="storageTimeline.html">Storage History</a></li>
+				</ul>
+			</div>
+			<div id="socials" class="col">
+				<h3>Social Media:</h3>
+				<ul>
+					<li><a href="https://www.youtube.com" class="fa fa-youtube-play">YouTube</a></li>
+					<li><a href="https://github.com/" class="fa fa-github">GitHub</a></li>
+					<li><a href="https://www.instagram.com/" class="fa fa-instagram">Instagram</a></li>
+				</ul>
+			</div>
+			<div id="disclaimer">
+				<hr>
+				<h4>Created By:</h4>
+				<p>Jarrod Mclaren<br>2022</p>
+				<hr>
+				<p>This website is for educational purposes only, I do not reserve the right to any media or content presented within unless stated othewise.<br>All credit goes to the origional creators/authors/owners.</p>
+			</div>
+		</footer>
+	<!--The script tag needs to be here as otherwise the java script tries to load the slideshow before the images are loaded-->
+	<script type="text/javascript" src="JS/scriptSlideshow.js"></script>
+	</body>
+</html>
