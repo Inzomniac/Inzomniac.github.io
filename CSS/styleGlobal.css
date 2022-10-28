@@ -198,7 +198,7 @@ https://www.section.io/engineering-education/building-an-animated-vertical-timel
 }
 
 .timelineSection ul li div{
-	width: 40rem;
+	width: 50rem;
 	font-size: 1.2rem;
 	position: relative;
 	bottom: 0;
@@ -236,7 +236,7 @@ https://www.section.io/engineering-education/building-an-animated-vertical-timel
 }
 
 .timelineSection ul li:nth-child(even) div{
-	left: -580px;
+	left: -640px;
 }
 
 .timelineSection ul li:nth-child(even) div::before{
@@ -282,33 +282,125 @@ time {
     opacity: 1;
 }
 
+/*Buttons*/
+.timelineSection ul li div .button{
+	display: inline-block;
+	float: right;
+	padding: 5px;
+	margin-top: 10px;
+	position: relative;
+	background-color: var(--cGrey);
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid grey;
+}
+
+.timelineSection ul li div .button:hover{
+	background-color: var(--cBlue);
+	color: var(--cYellow);
+}
+
+.timelineSection ul li div::after{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+ .article{
+	width: 95%;
+	background-color: var(--cYellow);
+	border-radius: 25px;
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	padding: 25px;
+}
+
+.article img{
+	display: inline-block;
+	float: left;
+	max-width: 200px;
+	height: auto;
+	background-color: var(--cBlue);
+}
+
+.article h1{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.article p{
+	display: block;
+	background-color: var(--cWhite);
+	margin-left: 214px;
+	padding: 5px;
+	max-height: 255px;
+	overflow: scroll;
+	border: 1px solid black;
+	font-size: 13px;
+}
+
+.article::after{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+
 @media screen and (max-width: 1024px){
 	.timelineSection ul li div{
 		width: 25rem;
 	}
 	.timelineSection ul li:nth-child(even) div{
-		left: -445px;
+		left: -345px;
 	}
 }
 
 /* When the screen is less than 768 (Tablet) pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+	.article img{
+		display: block;
+		max-width: 133px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.article h1{
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+	.article p{
+		max-height: 266px;
+		margin-left: 0px;
+	}
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
 		position: absolute;
 		right: 0;
 		top: 0;
-  }
-  .topnav.responsive a {
+	}
+	.topnav.responsive a {
 		float: none;
 		display: block;
 		text-align: left;
-  }
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+	}
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
 		float: right;
 		display: block;
-  }
+	}
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	}
+	.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	}
 	.headercontainer h1{
 		margin: auto;
 		display: block;
