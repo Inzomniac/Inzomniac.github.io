@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>CPU Articles</title>
+		<link rel="stylesheet" type="text/css" href="CSS/styleGlobal.css">
+		<link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="JS/scriptGlobal.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="headercontainer">
+				<img src="MEDIA/siteicon.png" alt="Site Icon">
+				<h1>Hardware History</h1>
+				<h2>By: Jarrod McLaren</h2>
+			</div>
+		</header>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="cpuTimeline.html" class="active">CPU History</a>
+				<a href="gpuTimeline.html">GPU History</a>
+				<a href="ramTimeline.html">RAM History</a>
+				<a href="storageTimeline.html">Storage History</a>
+				<a href="about.html">About this site</a>
+				<a href="javascript:void(0);" class="icon" onclick="dropMenu()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</nav>
+		<content>
+		<!--Content Section-->
+			<div class="article" id="1">
+				<img src="MEDIA/cpuArticle1.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 4004: 1971</h1>
+				<p>
+					The first microprocessor in history, Intel 4004
+					was a 4-bit CPU designed for usage in
+					calculators, or, as we say now, designed
+					for "embedded applications". Clocked at 740 KHz,
+					the 4004 executed up to 92,000 single word
+					instructions per second, could access 4 KB of
+					program memory and 640 bytes of RAM. Although the
+					Intel 4004 was perfect fit for calculators and
+					similar applications it was not very suitable for
+					microcomputer use due to its somewhat limited
+					architecture. The 4004 lacked interrupt support,
+					had only 3-level deep stack, and used complicated
+					method of accessing the RAM. Some of these
+					shortcomings were fixed in the 4004 successor -
+					Intel 4040.
+					<br><br><br><br><br>
+					IntelP4004. MCS4 &gt; intelp4004. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/MCS4/IntelP4004.html 
+				</p>
+			</div>
+			<div class="article" id="2">
+				<img src="MEDIA/cpuArticle2.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 8008: 1972</h1>
+				<p>
+					The first 8-bit microprocessor, Intel 8008 was
+					released 5 months after Intel 4004
+					microprocessor. The 8008 was available in two
+					speed grades - 500 KHz and 800 KHz, but even the
+					faster version 8008-1 was running a bit slower
+					(in instructions per second) than the 4004.
+					Nevertheless, overall performance of the 8008 was
+					greater due to 8-bit architecture. The 8008 had
+					other advantages over the 4004:
+					<br>
+					Support of 16 KB of memory (ROM and RAM combined).
+					Deeper stack: 7 levels instead of 3 levels.
+					Interrupt capability.
+					<br>
+					One of the drawbacks of the Intel 8008 was the
+					absence of direct memory addressing. To access
+					data in memory the memory address had to be
+					stored in H and L registers, and only then the
+					processor could indirectly access the memory.
+					This limitation was removed in Intel 8080.
+					<br><br><br><br><br>
+					IntelC8008-1. 8008 &gt; intelc8008-1. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8008/IntelC8008-1.html 
+				</p>
+			</div>
+			<div class="article" id="3">
+				<img src="MEDIA/cpuArticle3.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 8080: 1974</h1>
+				<p>
+					Intel 8080 microprocessor is a successor to the
+					Intel 8008 CPU. To ease transition to the 8080
+					Intel made the new microprocessor source code
+					compatible with the 8008. Interrupt processing
+					logic didn't change from the 8008, which also
+					helped to port old software to the 8080
+					processor. The 8080 processor included many
+					enhancements:
+					<br>
+					Maximum memory size was expanded to 64 KB.
+					Stack size was no longer limited to 7 levels.
+					The number of I/O ports was increased to 256.
+					The processor included many new instructions and
+					direct addressing mode.
+					<br>
+					Beautiful white ceramic package.
+					<br><br><br><br><br>
+					Intel 8080. 8080 &gt; INTELC8080A. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/808x/8080/IntelC8080A.html 
+				</p>
+			</div>
+			<div class="article" id="4">
+				<img src="MEDIA/cpuArticle4.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 4040: 1974</h1>
+				<p>
+					Intel 4040 is an enhanced version of Intel 4004
+					microprocessor. Running at the same speed as the
+					4004 and being fully object compatible with it,
+					the 4040 doubled maximum program memory,
+					increased stack size, added an extra bank of 8 4-
+					bit registers and included interrupt support (see
+					differences between Intel 4040 and 4004). Intel
+					4040 was used in Intellec 4/40 microcomputer
+					development system and in in embedded
+					applications.
+					<br><br><br><br><br>
+					IntelC4040. MCS4 &gt; INTELC4040. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/MCS4/IntelC4040.html 				</p>
+			</div>
+			<div class="article" id="5">
+				<img src="MEDIA/cpuArticle5.jpg" alt="An image relating to this article"></img>
+				<h1>Motorola 6800</h1>
+				<p>
+					Motorola 6800 is a 8-bit microprocessor which was released at about the same time as Intel 8080.
+					The 6800 had 16-bit address bus and could address up to 64 KB of memory. From common registers the CPU had only two accumulators and one index register.
+					The 6800 didn't have I/O instructions and therefore 6800-based systems had to use memory-mapped I/O for input/output capabilities.
+					Motorola 6800 started the big family of 680x microcontrolers and microprocessors, some of which are still produced today.
+					<br><br><br><br><br>
+					Motorola 6800 microprocessor family. (n.d.). Retrieved October 25, 2022, from https://www.cpu-world.com/CPUs/6800/index.html 
+				</p>
+			</div>
+			<div class="article" id="6">
+				<img src="MEDIA/cpuArticle6.jpg" alt="An image relating to this article"></img>
+				<h1>Texas Instruments TMS1000: 1974</h1>
+				<p>
+					Texas Instruments TMS1000 family of 4-bit microcontrollers was introduced in 1974. The TMS 1000 microcontrollers had very simple design - only 2 4-bit general registers, 43 instructions (expanded to 54 instructions in TMS1100/TMS1300), 1-level deep stack, shift-register program counter and no interrupts.
+					The TMS1000/TMS1070 were basic microcontrollers with 1 KB of masked ROM and 64 x 4 bits of RAM. ROM and RAM memory size was doubled on TMS1100 microcontrollers. TMS1200/TMS1270/TMS1300 microcontrollers were similar to TMS1000/TMS1070/TMS1100 respectively, but had more output lines. The TMS1070 and TMS1270 could directly interface to high voltage displays.
+					<br><br><br><br><br>
+					Texas Instruments TMS1000 microcontroller family - cpu-world.com. (n.d.). Retrieved October 25, 2022, from https://www.cpu-world.com/CPUs/TMS1000/index.html 				</p>
+			</div>
+			<div class="article" id="7">
+				<img src="MEDIA/cpuArticle7.jpg" alt="An image relating to this article"></img>
+				<h1>AMD1820-2378: 1975</h1>
+				<p>
+					House numbered 2901.
+						AMD 2901 bit-slice processor family includes 2901
+						and 2903 4-bit microprocessors slices, 2909 and
+						2911 microprogram sequencers, 2910 microprogram
+						controller and other support chips. The 2901
+						processor consists of 16 4-bit registers, 4-bit
+						ALU and associated decoding/multiplexing
+						circuits. The ALU accepts 9-bit microinstructions
+						that specify source operands, ALU function and
+						the destination register. The 2901 ALU can
+						perform 8 different functions (they are encoded
+						into 3 bits within the microinstruction):
+						addition, subtraction and logic operations.
+						Multiple 2901 bit-slice processors could be
+						combined together to build microprocessors with
+						any data width (in 4 bits increments).
+					<br><br><br><br><br>
+					AMD1820. 2901 &gt; AMD1820-2378. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/2901/AMD1820-2378.html
+				</p>
+			</div>
+			<div class="article" id="8">
+				<img src="MEDIA/cpuArticle8.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 8085: 1976</h1>
+				<p>
+					Intel 8085 microprocessor is the next generation of Intel 8080 CPU family. In addition to being faster than the 8080, the 8085 had the following enhancements:
+					Intel 8085 had single 5 Volt power supply.
+					Clock oscillator and system controller were integrated on the chip.
+					The CPU included serial I/O port.
+					Two new instructions were added to 8085 instruction set. The CPU also included a few undocumented instructions. These instructions were supposed to be a part of the CPU instruction set, but at the last moment they were left undocumented because they were not compatible with forthcoming Intel 8086.
+					<br><br><br><br><br>
+					Intel 8085 microprocessor family. (n.d.). Retrieved October 25, 2022, from https://www.cpu-world.com/CPUs/8085/index.html
+				</p>
+			</div>
+			<div class="article" id="9">
+				<img src="MEDIA/cpuArticle9.jpg" alt="An image relating to this article"></img>
+				<h1>Fairchild 3850: 1976</h1>
+				<p>
+					Fairchild F8 or 3850 is a multi-chip
+					microcontroller. The F8 is based on the 3850
+					chip - this chip integrates 8-bit ALU, 64-bytes
+					scratchpad RAM and two 8-bit I/O ports. The 3850
+					does not decode instructions - 3851 or 3856
+					program storage unit (PSU) chips, dynamic memory
+					interface (DMI) chip, 3853 static memory
+					interface (SMI) chip or 3861/3871 parallel I/O
+					(PIO) chips are used for this task. If necessary,
+					multiple PSU, DMI, SMI and PIO chips can be used
+					together with one 3850 ALU chip. The PSU chips
+					include the following on-chip features:
+
+					ROM: 1 KB for the 3851 and 2 KB for the 3856
+					Memory addressing logic
+
+					Two 8-bit I/O ports
+					Interrupt logic
+					Timer
+					SMI, DMI and PIO chips don't have on-chip ROM.
+
+					One-chip implementation of F8, Mostek 3870, was
+					released in 1977.
+					<br><br><br><br><br>
+					Fairchild 3850. Fairchild &gt; Fairchild3850PC. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Fairchild/Fairchild3850PC.html 
+				</p>
+			</div>
+			<div class="article" id="10">
+				<img src="MEDIA/cpuArticle10.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 8086: 1978</h1>
+				<p>
+					Intel 8086 microprocessor is a first member of
+					x86 family of processors. Advertised as a "source-
+					code compatible" with Intel 8080 and Intel 8085
+					processors, the 8086 was not object code
+					compatible with them. The 8086 had complete 16-
+					bit architecture - 16-bit internal registers, 16-
+					bit data bus, and 20-bit address bus (1 MB of
+					physical memory). Because the processor had 16-
+					bit index registers and memory pointers, it could
+					effectively address only 64 KB of memory. To
+					address memory beyond 64 KB the Intel 8086 used
+					segment registers - these registers specified
+					where code, stack data and extra data 64 KB
+					segments are located within 1 MB of total
+					processor memory. To accommodate this awkward
+					memory addressing many 8086 compilers included 6
+					different memory models: tiny, small, compact,
+					medium, large and huge. 64 KB direct addressing
+					limitation went away with the introduction of the
+					32-bit protected mode in Intel 80386 processor.
+
+					This is the best looking, and by far most rare
+					package for the 8086.
+					<br><br><br><br><br>
+					Intel 8086. 8086 &gt; intelc8086. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/808x/8086/IntelC8086.html 
+				</p>
+			</div>
+			<div class="article" id="11">
+				<img src="MEDIA/cpuArticle11.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 8088: 1979</h1>
+				<p>
+					Intel 8088 microprocessor is almost identical to
+					the Intel 8086 processor with the exception of
+					the external data bus. External data bus width of
+					the 8088 was reduced to 8 bits, and instruction
+					queue size and prefetching algorithms were
+					changed. Intel 8088 used two consecutive bus
+					cycles to write or read 16 bit data instead of
+					one cycle for the 8086. This made the processor
+					to run slower, but on the plus side the hardware
+					changes in the 8088 CPU made it compatible with
+					8080/8085 peripherals.
+
+					Architecture of the 8088 stayed the same as the
+					8086: 16-bit registers, 16-bit internal data bus
+					and 20-bit address bus, which allowed the
+					processor address up to 1 MB of memory. The 8088
+					had the same segmented memory addressing as the
+					8086: the processor could address 64 KB of memory
+					directly, and to address more than 64 KB of
+					memory one of special segment registers had to be
+					updated.
+
+					Early 'polished square' logo
+					<br><br><br><br><br>
+					Intel 8088. 8088 &gt; intelp8088_2. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/808x/8088/IntelP8088_2.html 
+				</p>
+			</div>
+			<div class="article" id="12">
+				<img src="MEDIA/cpuArticle12.jpg" alt="An image relating to this article"></img>
+				<h1>Motorola 68000: 1979</h1>
+				<p>
+					The Motorola 68000 is a 16/32-bit complex instruction set computer (CISC) microprocessor, 
+					in 1979 by Motorola Semiconductor Products Sector.
+					The design implements a 32-bit instruction set, with 32-bit registers and a 16-bit internal data bus.
+					The address bus is 24 bits and does not use memory segmentation, which made it easier to program for. Internally, it uses a 16-bit data arithmetic logic unit and two more 16-bit ALUs used mostly for addresses,
+					and has a 16-bit external data bus. For this reason, Motorola termed it a 16/32-bit processor.
+					As one of the first widely available processors with a 32-bit instruction set, and running at relatively high speeds for the era, the 68k was a popular design through the 1980s.
+					It was widely used in a new generation of personal computers with graphical user interfaces, including the Macintosh, Amiga, Atari ST, and X68000. The 1988 Mega Drive console is also powered by a 68000.
+
+					The 68000 was followed by additional processors implementing full 32-bit ALUs as part of the growing Motorola 68000 series.
+					The original 68k is generally software forward-compatible with the rest of the line despite being limited to a 16-bit wide external bus.
+
+					Pre-release XC68000 chip made in 1979
+
+					Die of Motorola 68000
+					After 43 years in production, the 68000 architecture is still in use.
+					Early 'polished square' logo
+					<br><br><br><br><br>
+					Wikimedia Foundation. (2022, October 2). Motorola 68000. Wikipedia. Retrieved October 26, 2022, from https://en.wikipedia.org/wiki/Motorola_68000  
+				</p>
+			</div>
+			<div class="article" id="13">
+				<img src="MEDIA/cpuArticle13.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 80186: 1982</h1>
+				<p>
+					Intel 80186 microprocessor, sometimes called
+					i186, is an enhanced version of Intel 8086 16-bit
+					processor. Being completely object code
+					compatible with the 8086, the 80186 integrated
+					many system components into one chip, added 7 new
+					instructions, and added new operand types to
+					three existing 8086 instructions. With the
+					exception of integrated components, the Intel
+					80186 microprocessor is not very different from
+					the 8086, and, because of this, the 80186 may be
+					considered as an embedded version of 8086.
+					<br>
+					This is the first PGA chip Intel made.
+					<br><br><br><br><br>
+					Intel 80186. 8018x &gt; intela80186. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8018x/IntelA80186.html   
+				</p>
+			</div>
+			<div class="article" id="14">
+				<img src="MEDIA/cpuArticle14.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 80286: 1982</h1>
+				<p>
+					Intel 80286 is a next generation of 8086 16-bit
+					processor. The 80286 microprocessor included new
+					instructions that were introduced by 80188/80186
+					processors, and added new features:
+					<br>
+					New 16-bit protected mode allowed the processor
+					to access 16 MB of memory. To setup the protected
+					mode new instructions and registers were added to
+					the 80286.
+					<br>
+					Execution time of many instructions was reduced.
+					<br>
+					The 80286 microprocessor was produced at speeds
+					ranging from 4 MHz (Very rare) to 25 MHz (second sources).
+					<br>
+					The i286 was made by no less then 5 second sources:<br>
+					AMD<br>
+					IBM<br>
+					Siemens<br>
+					Fujitsu<br>
+					Harris<br>
+					<br><br><br><br><br>
+					Intel 80286. 8028x &gt; intela80286-10. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8028x/IntelA80286-10.html    
+				</p>
+			</div>
+			<div class="article" id="15">
+				<img src="MEDIA/cpuArticle15.jpg" alt="An image relating to this article"></img>
+				<h1>Intel 80387: 1987</h1>
+				<p>
+					Intel 80387 is a co-processor for 80386
+					microprocessor family. The 80387 runs at the same
+					speed as the 80386 and supports all execution
+					modes of the main processor - real, protected and
+					virtual. Being fully object-code compatible with
+					80287 and 8087 co-processors, the 80387 has much
+					greater performance due to a few factors:
+					<br>
+					Higher co-processor clock frequency.
+					<br>
+					Execution of optimized FPU instructions requires
+					fewer clock cycles.
+					<br>
+					Data bus is 32-bit.
+					<br>
+					The 80387 comes in two versions - 80387DX works
+					with 80386DX processors, and 80387SX works with
+					80386SX CPUs (Since the SX and DX have different
+					bus sizes)
+					<br>
+					This is one of the earliest versions, using CHMOS
+					III 1.5 Micron.
+					<br><br><br><br><br>
+					Intel 80387. 8038x &gt; Intel80387-16B. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8038x/Intel80387-16B.html     
+				</p>
+			</div>
+			<div class="article" id="16">
+				<img src="MEDIA/cpuArticle16.jpg" alt="An image relating to this article"></img>
+				<h1>AMD29000-16GC</h1>
+				<p>
+					29K 3-bus microprocessors included the 29000,
+					29005 and 29050. They have seperate buses for
+					data, addresses and instructions. All three of
+					these CPUs are pin compatible and are 5 Volt
+					devices. The 29005 was the value chip with the
+					29050 being the premier microporcessor. Thee
+					29050 possed a very capable FPU. It was a VERY
+					capable processor and is still in wide use today.
+
+					<br><br><br><br><br>
+					AMD29000. 29K &gt; AMDAM29000-16GC. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/29K/AMDAm29000-16GC.html     
+				</p>
+			</div>
+			<div class="article" id="17">
+				<img src="MEDIA/cpuArticle17.jpg" alt="An image relating to this article"></img>
+				<h1>Intel i960</h1>
+				<p>
+					Intel 80960 (i960) is a family of 32-bit embedded microprocessors. The i960 family consists of the following sub-families:
+					<br>High-performance superscalar microprocessors: 80960CA/CF/HA/HD/HT. 80960Hx CPUs have larger instruction and data cache than the 80960Cx parts, and include 2 32-bit timers.
+					<br>Low-power processors: 80960JA/JC/JD/JF/JS/JT/VH
+					<br>Communication processors: 80960RD/RM/RN/RP. All of these processors are based on 80960Jx core, and integrate many peripherals on a chip, like PCI interface, memory controller, DMA controller, etc.
+					<br>Cost-effective CPUs: 80960KA/KB/MC/SA/SB.
+					<br>
+					Since its introduction in 1988 the
+					i960 has seen MANY versions and
+					speeds from 16 - 133MHz. It is a
+					32-bit RISC microprocessor that
+					integrates a variety of features
+					depending on the version.
+					<br><br><br><br><br>
+					Intel i960. 80960 &gt; intela80960ca-25-2. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/80960/IntelA80960CA-25-2.html 
+					Intel 80960 (i960) microprocessors - cpu-world.com. (n.d.). Retrieved October 26, 2022, from https://www.cpu-world.com/CPUs/80960/index.html 
+				</p>
+			</div>
+			<div class="article" id="18">
+				<img src="MEDIA/cpuArticle18.jpg" alt="An image relating to this article"></img>
+				<h1>Intel i486: 1989</h1>
+				<p>
+					The successor to the 80386 processor, Intel 80486
+					(i486) added new important features:
+					<br>
+					Floating Point Unit was integrated with the
+					processor
+					<br>
+					Internal clock doubling and tripling allowed the
+					processor to run much faster in existing
+					motherboards.
+					<br>
+					Power management features and SMM (System
+					Management Mode) became a standard feature of the
+					processor.
+					<br>
+					Instruction set optimization resulted in even
+					greater performance of the processor. Different
+					versions of the 80486 were produced, two most
+					common versions are 80486DX with integrated FPU,
+					and 80486SX without FPU. The Intel 80486 was
+					produced at speeds up to 100 MHz. AMD produced
+					even faster 120 and 133 MHz versions of the 80486.
+					<br>
+					Early SX chips had the FPU disabled, later ones
+					had it removed from the die completely, saving
+					400,000 transistors.
+					<br><br>
+					DX/SX = 1x Multyplier<br>
+					DX2/SX2 = 2 x Multyplier<br>
+					DX4 = 3x Multiplier<br>
+					<br><br>
+					Bus Speed: 25MHz
+					<br>
+					This is a rare version made by IBM as a second
+					source for Intel, but retaining the Intel brand.
+					<br><br><br><br><br>
+					Intel i486. 8048x &gt; intel486dx2-50 (by IBM). (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8048x/Intel486DX2-50%20%28BY%20IBM%29.html    
+				</p>
+			</div>
+			<div class="article" id="19">
+				<img src="MEDIA/cpuArticle19.jpg" alt="An image relating to this article"></img>
+				<h1>AMD 29050-40GC: 1990</h1>
+				<p>
+					The 29050 possed a very capable FPU. It was a
+					VERY capable processor and is still in wide use
+					today. It is used by honeywell to power the
+					flight systems of many of todays planes including
+					the 747 and C5B Galaxy, as well as the 777.
+					<br>
+					The 29050 is the basis for the AMD K5 proccesor.
+					<br><br><br><br><br>
+					AMD 29050. 29K &gt; AMDAM29050-40GC. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/29K/AMDAm29050-40GC.html       
+				</p>
+			</div>
+			<div class="article" id="20">
+				<img src="MEDIA/cpuArticle20.jpg" alt="An image relating to this article"></img>
+				<h1>AMD 29030-25FC: 1991</h1>
+				<p>
+					These processors have a combined Instruction and
+					Data bus. They are a bit more flexible then the 3-
+					bus architectur in that they have scalable
+					clocking, scalable bus sizing and full JTAG
+					support. The 29035 is the value model and the
+					29040 is the performance model, available with
+					speeds of up to 50MHz. The 29040 has a hardware
+					multiply (integer) unit but lacks a FPU.
+					<br><br><br><br><br>
+					AMD 29030-25FC. 29K &gt; AMDAM29030-25FC. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/29K/AMDAm29030-25FC.html      
+				</p>
+			</div>
+			<div class="article" id="21">
+				<img src="MEDIA/cpuArticle21.jpg" alt="An image relating to this article"></img>
+				<h1>Intel Pentium: 1993</h1>
+				<p>
+					The Pentium (or P5) was the next in the line of
+					Intel x86 CPUs. The class of CPUs is known as
+					8050x, or Pentiums. Intel was going away from
+					branding CPUs as numbers (486 etc) as it was
+					ruled that Intel couldn't copyright numbers.
+					<br>
+					The Pentium has 16K of Cache (32k in MMX chips)
+					and could address 4GB of memory. In essence
+					it was 2 486s side by side. It was made in speeds
+					from 60MHz-300MHz, voltages from 1.8 (mobile) to
+					5.15V (origial Pentium).
+					<br>
+					There are several Flavors of the Pentium:
+					P5: Original 5V Socket 4
+					P54C: Socket 5/7 3.3V
+					P55C: Socket 7 Split Voltage 0.35u MMX
+					<br>
+					The early Pentiums had a bug called the FDIV Bug,
+					that under certain conditions would result in
+					faulty math. It was a PR nightmare and was fixed.
+					<br>
+					------------------------<br>
+					Type: P5<br>
+					MMX: No<br>
+					FDIV Bug: Yes<br>
+					------------------------<br>
+					<br>
+					This was a very early version without the heat
+					plate.
+					<br><br><br><br><br>
+					Intel Pentium. 8050x &gt; INTELA80501-60-2. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/8050x/IntelA80501-60-2.html     
+				</p>
+			</div>
+			<div class="article" id="22">
+				<img src="MEDIA/cpuArticle22.jpg" alt="An image relating to this article"></img>
+				<h1>Intel Pentium II(2): 1997</h1>
+				<p>
+					The Pentium II is the second of the P6 series.
+					The Pentium Pro was first. The PII includes
+					MMX instructions and fixes the slow 16-bit
+					performance of the Pentium Pro. It also marked
+					a transition away from socketed CPUs. As in the
+					PPRO, the 512K cache is seperate from the CPU dies, but instead of including it in the same
+					cavity Intel chose to integrate it on a PCB.
+					This allowed them to use commercial (cheaper)
+					cache chips. With this though the cache ran at
+					1/2 CPU speed.
+					<br>
+					The PII was originally made on a 0.35u process
+					but transistioned to a much better 0.25u process.
+					<br>
+					The PII also saw the introduction of a 100MHz Bus
+					with the 350MHz and 400MHz CPUs.
+					<br><br>
+					--------------<br>
+					80522 = 0.35u (Klamath)<br>
+					80523 = 0.25u (Deschutes)<br>
+					Note: The code names are both rivers
+					in Oregon<br>
+					------------------------<br>
+					<br><br><br><br><br>
+					Intel Pentium II. PentiumII &gt; INTEL80522PX233512. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/PentiumII/Intel80522PX233512.html      
+				</p>
+			</div>
+			<div class="article" id="23">
+				<img src="MEDIA/cpuArticle23.jpg" alt="An image relating to this article"></img>
+				<h1>AMD-K5 PR100: 1994</h1>
+				<p>
+					Of all the x86 processors announced, AMD's is the
+					most architecturally interesting, diverging
+					radically from the approach taken by Pentium's
+					designers. At its heart, the K5 isn't an Intel-
+					compatible chip at all - it's a RISC processor
+					somewhat akin to AMD's superscalar AM29000 chips.
+					However the RISC core and its instruction set
+					(called ROPs - pronounced ar-ops)is hidden from
+					the end user. Instead, x86 instructions are
+					converted into these RISC operations which are
+					then handled by six parallel execution units:
+					one floating point unit, two integer units, two
+					load/store units and a branch unit. It is an
+					approach similar to NexGen's Nx586, however AMD
+					has included some extra technology at the
+					beginning of the translation process, which the
+					company claims will allow up to four x86
+					instructions to be despatched concurrently.
+					This is pushing it a bit, since only the very
+					simplest x86 instructions will map directly onto
+					an ROP. "Simplest" in this case, equates to instructions such as register-to-register adds.
+					Most operations take two or three.
+					<br>
+					The K5 was Pentium Rated (PR) to how fast of a
+					Pentium it was equivalent to.
+					<br><br><br><br><br>
+					AMD-K5. K5 &gt; AMDK5PR100ABQ-2. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/K5/AMDK5PR100ABQ-2.html      
+				</p>
+			</div>
+			<div class="article" id="24">
+				<img src="MEDIA/cpuArticle34.jpg" alt="An image relating to this article"></img>
+				<h1>AMD-K6 200ALR: 1997</h1>
+				<p>
+					The K6 was based on the Nexgen 686. AMD bought
+					Nexgen and used there RISC86 core which allowed
+					much higher speeds then the old K5 core.
+					<br>
+					K6's were made on 0.35 micron process originally
+					and then moved to 0.25 micron in 1998.
+					For a while AMD used a PR rating to equate
+					the K6 to the Pentium II, but since the PR was
+					the same as the actual speed, it was dropped.
+					<br>
+					This is a 0.35 micron part.
+					<br>
+					This is a somewhat rare version with the large
+					'K6' logo on it.
+					<br><br><br><br><br>
+					AMD-K6. K6 &gt; AMDK6-200ALR-old-logo. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/K6/AMDK6-200ALR-OLD-LOGO.html      
+				</p>
+			</div>
+			<div class="article" id="25">
+				<img src="MEDIA/cpuArticle25.jpg" alt="An image relating to this article"></img>
+				<h1>AMD k6-2 266AFR: 1998</h1>
+				<p>
+					The K6-2 was based on the Nexgen 686. AMD bought
+					Nexgen and used there RISC86 core which allowed
+					much higher speeds then the old K5 core. The
+					K6-2 is merely an enhanced K6. It included
+					3d Now! which is 21 addictional instructions
+					for FPU intensive tasks.
+					<br><br>
+					It scaled in speed from 200MHz to over 550Mhz
+					Extending the life of the socket 7 platform by
+					several years. It was also made in mobile and
+					embedded versions (lower voltage and higher
+					temperature tolerance.). It also used bussed from 66-100Mhz.
+					<br><br>
+					Temp Spec: 70C<br>
+					Bus: 66MHz<br>
+					<br><br><br><br><br>
+					AMD K6-2. K6-2 &gt; AMDK6-2-266AFR. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/AMD/K6-2/AMDK6-2-266AFR.html      
+				</p>
+			</div>
+			<div class="article" id="26">
+				<img src="MEDIA/cpuArticle26.jpg" alt="An image relating to this article"></img>
+				<h1>Intel Pentium III(3): 1999</h1>
+				<p>
+					The Pentium III is the third in the P6 family.
+					It includes some enhancements over the PII.
+					It has SSE which is additional intructions
+					for working on multimedia code.
+					<br>
+						SSE = Streaming SIMD Extentions<br>
+						SIMD = Single Instruction Multiple Data<br>
+					<br>
+					Several versions of the PIII were made:<br>
+						80525 PIII Katmai - 0.25 Micron Cache offchip<br>
+						80526 PIII Coppermine - 0.18 Micron 256K of cache integrated on the die<br>
+						PIII Mobile - Low voltage PIII with on die cache<br>
+						80530 PIII Tualatin - 512k Cache on Die and voltages<br>
+					<br>
+					The Coppermine was available in both the SECC2
+					package and a Sooket 370 FCPGA
+					Tualatins were a modified Socket 370 called Socket T.
+					<br>
+					Pentium III CPUs spaned 1000MHz of speed (400
+					-1400). and were great performers. a P3 1400
+					will outperform a P4 2GHz.<br>
+					-----------------------------<br>
+					Core: Katmai<br>
+					Cache: 512k<br>
+					FSB: 100<br>
+					--------------------<br>
+					<br><br><br><br><br>
+					CIntel Pentium 3. PentiumIII &gt; intel80525py450512-Q817ES. (n.d.). Retrieved October 26, 2022, from https://cpushack.com/chippics/Intel/PentiumIII/Intel80525PY450512-Q817ES.html      
+				</p>
+			</div>
+		<!--End Content Section-->
+		</content>
+		<footer>
+			<div id="quicklinks" class="col">
+				<h3>Quick links:</h3>
+				<ul>
+					<li><a href>Home</a></li>
+					<li><a href>CPU History</a></li>
+					<li><a href>GPU History</a></li>
+					<li><a href>RAM History</a></li>
+					<li><a href>Storage History</a></li>
+				</ul>
+			</div>
+			<div id="socials" class="col">
+				<h3>Social Media:</h3>
+				<ul>
+					<li><a href="https://www.youtube.com" class="fa fa-youtube-play">YouTube</a></li>
+					<li><a href="https://github.com/" class="fa fa-github">GitHub</a></li>
+					<li><a href="https://www.instagram.com/" class="fa fa-instagram">Instagram</a></li>
+				</ul>
+			</div>
+			<div id="disclaimer">
+				<hr>
+				<h4>Created By:</h4>
+				<p>Jarrod Mclaren<br>2022</p>
+				<hr>
+				<p>This website is for educational purposes only, I do not reserve the right to any media or content presented within unless stated othewise.<br>All credit goes to the origional creators/authors/owners.</p>
+			</div>
+		</footer>
+	</body>
+</html>
